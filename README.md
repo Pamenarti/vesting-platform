@@ -177,7 +177,9 @@ Distributed under the MIT License. See \`LICENSE\` for more information.
 ## 📞 Contact
 
 Paro - [@Pamenarti](https://twitter.com/pamenarti)
+
 Email - [pamenarti@gmail.com](pamenarti@gmail.com)
+
 Project Link: [https://github.com/pamenarti/vesting-platform](https://github.com/pamenarti/vesting-platform)
 
 ## 🙏 Acknowledgments
