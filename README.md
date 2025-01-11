@@ -21,7 +21,7 @@ A comprehensive token vesting platform for managing token distributions with cus
 
 ## 🛠 Installation
 
-\`\`\`bash
+```bash
 # Clone the repository
 git clone https://github.com/yourusername/vesting-platform
 
@@ -33,23 +33,23 @@ npm install
 
 # Create environment file
 cp .env.example .env
-\`\`\`
+```
 
 ## ⚙️ Configuration
 
 Configure your \`.env\` file:
 
-\`\`\`env
+```env
 RPC_URL=your_rpc_url
 PRIVATE_KEY=your_private_key
 VESTING_CONTRACT_ADDRESS=deployed_contract_address
-\`\`\`
+```
 
 ## 📖 Usage Examples
 
 ### Create Vesting Schedule
 
-\`\`\`javascript
+```javascript
 const VestingPlatform = require('./index.js');
 const vesting = new VestingPlatform();
 
@@ -64,15 +64,15 @@ await vesting.createVestingSchedule(
     true,            // Revocable
     "1000000"        // 1M tokens
 );
-\`\`\`
+```
 
 ### Release Tokens
 
-\`\`\`javascript
+```javascript
 // Release available tokens
 const scheduleId = await vesting.computeVestingScheduleId(beneficiaryAddress);
 await vesting.releaseTokens(scheduleId, amount);
-\`\`\`
+```
 
 ## 📊 Vesting Templates
 
@@ -86,25 +86,25 @@ await vesting.releaseTokens(scheduleId, amount);
 ## 🔒 Security Features
 
 ### Schedule Management
-\`\`\`javascript
+```javascript
 // Revoke vesting schedule
 await vesting.revokeSchedule(scheduleId);
 
 // Check withdrawable amount
 const available = await vesting.getWithdrawableAmount();
-\`\`\`
+```
 
 ### Vesting Checks
-\`\`\`solidity
+```solidity
 // Built-in security checks
 require(vestingSchedule.initialized, "Not initialized");
 require(!vestingSchedule.revoked, "Schedule revoked");
 require(vestedAmount >= amount, "Insufficient vested amount");
-\`\`\`
+```
 
 ## 📈 Event Monitoring
 
-\`\`\`javascript
+```javascript
 // Listen to vesting events
 vesting.listenToEvents();
 
@@ -112,11 +112,11 @@ vesting.listenToEvents();
 // - VestingScheduleCreated
 // - TokensReleased
 // - VestingScheduleRevoked
-\`\`\`
+```
 
 ## 🧪 Testing
 
-\`\`\`bash
+```bash
 # Run all tests
 npx hardhat test
 
@@ -125,7 +125,7 @@ npx hardhat test test/TokenVesting.test.js
 
 # Get coverage report
 npx hardhat coverage
-\`\`\`
+```
 
 ## 📈 Contract Functions
 
@@ -147,7 +147,7 @@ npx hardhat coverage
 
 ## 🔍 Implementation Details
 
-\`\`\`solidity
+```solidity
 struct VestingSchedule {
     bool initialized;
     address beneficiary;
@@ -160,7 +160,7 @@ struct VestingSchedule {
     uint256 released;
     bool revoked;
 }
-\`\`\`
+```
 
 ## 🤝 Contributing
 
