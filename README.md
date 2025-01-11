@@ -23,7 +23,7 @@ A comprehensive token vesting platform for managing token distributions with cus
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/vesting-platform
+git clone https://github.com/Pamenarti/vesting-platform
 
 # Navigate to project directory
 cd vesting-platform
