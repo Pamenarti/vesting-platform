@@ -176,9 +176,9 @@ Distributed under the MIT License. See \`LICENSE\` for more information.
 
 ## 📞 Contact
 
-Your Name - [@yourusername](https://twitter.com/yourusername)
+Your Name - [@Pamenarti](https://twitter.com/pamenarti)
 
-Project Link: [https://github.com/yourusername/vesting-platform](https://github.com/yourusername/vesting-platform)
+Project Link: [https://github.com/pamenarti/vesting-platform](https://github.com/pamenarti/vesting-platform)
 
 ## 🙏 Acknowledgments
 
